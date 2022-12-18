@@ -1,80 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template</title>
-  <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="scorecard-container">
-    <div class="army1">
-      <div class="primary" >
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-      </div>
-      <div class="secondary1">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-      </div>
-      <div class="secondary2">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-      </div>
-      <div class="secondary3">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-      </div>
-    </div>
-    </div>
-    <div class="army2">
-      <div class="primary2" >
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-    </div>
-    <div class="secondary1">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-    </div>
-    <div class="secondary2">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-    </div>
-    <div class="secondary3">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-      <input type="number">
-    </div>
-  </div>
-</div>
-
-  <!-- script -->
-  <script src="script.js"></script>
-</body>
-</html>
+<form>
+  <div>
+    <label for="player1">Player 1:</label>
+    <input type="text" id="player1" name="player1">
+    <table>
+      <tr>
+        <th>Objective</th>
+        <th>Turn 1</th>
+        <th>Turn 2</th>
+        <th>Turn 3</th>
+        <th>Turn 4</th>
+        <th>Turn 5</th>
+      </tr>
+      <tr>
+        <td>Primary Objective</td>
+        <td contentEditable="true">
+          <input type="text" id="player1Primary1" name="player1Primary1">
+        </td>
+        <td contentEditable="true">
+          <input type="text" id="player1Primary2" name="player1Primary2">
+        </td>
+        <td contentEditable="true">
+          <input type="text" id="player1Primary3" name="player1Primary3">
+        </td>
+        <td>
+          <input type="text" id="player1Primary4" name="player1Primary4">
+        </td>
+        <td>
+          <input type="text" id="player1Primary5" name="player1Primary5">
+        </td>
+      </tr>
+      <tr>
+       <td><input type="text" placeholder="Secondary 1"></td> 
+        <td>
+          <input type="text" id="player1Secondary1_1" name="player1Secondary1_1">
+        </td>
+        <td>
+          <input type="text" id="player1Secondary1_2" name="player1Secondary1_2">
+        </td>
+        <td>
+          <input type="text" id="player1Secondary1_3" name="player1Secondary1_3">
+        </td>
+        <td>
+          <input type="text" id="player1Secondary1_4" name="player1Secondary1_4">
+        </td>
+        <td>
+          <input type="text" id="player1Secondary1_5" name="player1Secondary1_5">
+        </td>
+      </tr>
+      <tr>
+       <td><input type="text" placeholder="Secondary 2" name="Secondary 2"></td>
+        <td>
+          <input type="text" id="player1Secondary2_1" name="player1Secondary2_1">
+        </td>
+        <td>
+          <input type="text" id="player1Secondary2_2" name="player1Secondary2_2">
+        </td>
+        <td>
+          <input type="text" id="player1Secondary2_3" name="player1Secondary2_3">
+        </td>
+        <td>
+          <input type="text" id="player1Secondary2_4" name="player1Secondary2_4">
+        </td>
+        <td>
+          <input type="text" id="player1Secondary2_5" name="player1Secondary2_5">
+        </td>
+      </tr>
+      <tr>
+       <td> <input type="text" placeholder="Secondary 3"></td>
+        <td>
+          <input type="text" id="player1Secondary3_1" name="player1Secondary3_1">
+  </td>
+  <td>
+    <input type="text" id="player1Secondary3_2" name="player1Secondary3_2">
+  </td>
+  <td>
+    <input type="text" id="player1Secondary3_3" name="player1Secondary3_3">
+  </td>
+  <td>
+    <input type="text" id="player1Secondary3_4" name="player1Secondary3_4">
+  </td>
+  <td>
+    <input type="text" id="player1Secondary3_5" name="player1Secondary3_5">
+  </td>
+</tr>
+<br></br>
+<div>
+  <table>
+    <tr>
+      <th>Objective</th>
+      <th>Turn 1</th>
+      <th>Turn 2</th>
+      <th>Turn 3</th>
+      <th>Turn 4</th>
+      <th>Turn 5</th>
+    </tr>
+    <label for="player1">Player 2:</label>
+    <input type="text" id="player2" name="player2">
+    <tr>
+      <td>Primary Objective</td>
+      <td contentEditable="true">
+        <input type="text" id="player2Primary1" name="player2Primary1">
+      </td>
+      <td contentEditable="true">
+        <input type="text" id="player2Primary2" name="player2Primary2">
+      </td>
+      <td contentEditable="true">
+        <input type="text" id="player2Primary3" name="player2Primary3">
+      </td>
+      <td>
+        <input type="text" id="player2Primary4" name="player2Primary4">
+      </td>
+      <td>
+        <input type="text" id="player2Primary5" name="player2Primary5">
+      </td>
+    </tr>
+    <tr>
+     <td><input type="text" placeholder="Secondary 1"></td> 
+      <td>
+        <input type="text" id="player2Secondary1_1" name="player2Secondary1_1">
+      </td>
+      <td>
+        <input type="text" id="player2Secondary1_2" name="player2Secondary1_2">
+      </td>
+      <td>
+        <input type="text" id="player2Secondary1_3" name="player2Secondary1_3">
+      </td>
+      <td>
+        <input type="text" id="player2Secondary1_4" name="player2Secondary1_4">
+      </td>
+      <td>
+        <input type="text" id="player2Secondary1_5" name="player2Secondary1_5">
+      </td>
+    </tr>
+    <tr>
+     <td><input type="text" placeholder="Secondary 2" name="Secondary 2"></td>
+      <td>
+        <input type="text" id="player2Secondary2_1" name="player2Secondary2_1">
+      </td>
+      <td>
+        <input type="text" id="player2Secondary2_2" name="player2Secondary2_2">
+      </td>
+      <td>
+        <input type="text" id="player2Secondary2_3" name="player2Secondary2_3">
+      </td>
+      <td>
+        <input type="text" id="player2Secondary2_4" name="player2Secondary2_4">
+      </td>
+      <td>
+        <input type="text" id="player2Secondary2_5" name="player2Secondary2_5">
+      </td>
+    </tr>
+    <tr>
+     <td> <input type="text" placeholder="Secondary 3"></td>
+      <td>
+        <input type="text" id="player2Secondary3_1" name="player2Secondary3_1">
+</td>
+<td>
+  <input type="text" id="player2Secondary3_2" name="player2Secondary3_2">
+</td>
+<td>
+  <input type="text" id="player2Secondary3_3" name="player2Secondary3_3">
+</td>
+<td>
+  <input type="text" id="player2Secondary3_4" name="player2Secondary3_4">
+</td>
+<td>
+  <input type="text" id="player2Secondary3_5" name="player2Secondary3_5">
+</td>
+</tr>
